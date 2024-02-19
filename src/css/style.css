@@ -9,6 +9,8 @@ html {
   box-sizing: inherit;
 }
 
+
+
 body {
   background-color: #f3f5fc;
   background-repeat: no-repeat;
@@ -54,8 +56,11 @@ body {
 }
 
 
-.logo {
+.logo:hover {
   width: 3rem;
+  overflow: hidden;
+  padding: 10PX;
+
 }
 
 main {
@@ -106,7 +111,7 @@ label {
 }
 
 .flex-button {
-  gap: 2rem;
+  gap: 3rem;
   padding-top: 2rem;
   justify-content: space-around;
 }
@@ -117,18 +122,26 @@ button {
   padding: 1rem;
   width: 100%;
   cursor: pointer;
+  
+  
 }
 
-.button-blue {
+.button-cifrar:hover {
   color: #fff;
   background-color: #0a3871;
   border: none;
+  margin: 0.1px;
+  
 }
 
-.button-grey {
+.button-descifrar:hover {
   color: #0a3871;
   background-color: unset;
   border: 1px solid #0a3871;
+  margin: 0.1%;
+  padding: 0.1%;
+  
+  
 }
 
 /* MediaQueries */

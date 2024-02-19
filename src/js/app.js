@@ -61,8 +61,8 @@ function decrypt() {
 
 function copy() {
   copiar.select();
-  copiar.setSelectionRange(0, 99999); // For mobile devices
+  copiar.setSelectionRange(0, 99999); 
 
-  // Copy the text inside the text field
+  
   navigator.clipboard.writeText(copiar.value);
 }
