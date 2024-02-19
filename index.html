@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
 
+    <main class="encriptar">
 
-    <div>
-        <img src="img/Logo.png" alt="">
-    </div>
+        <div class="flex user padding-user">
+            <div>
+             <img class="logo" src="src/img/alura.png" alt="Alura">
+            <textarea class="user-text" name="" id="" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div>
+                <label for=""><span class="Solo">&#33;</span>Solo letras minúsculas y sin acentos</label>
+                <div class="flex flex-button">
+                <button type="button" onclick="encrypt()" class="button-blue">Cifrar</button>
+                <button type="button" onclick="decrypt()" class="button-grey">Descifrar</button>
+                </div>
+            </div>
+        </div> 
 
-    <div class="texto">
-
-    <textarea name="textarea" cols="50" rows="5" placeholder="Ingrese el texto aqui"></textarea>
-
-    </div>
-
-    <aside class="lateral">
-        <img src="img/Muñeco.png" alt="">
-    </aside>
+        <div class="flex translation not-found padding-result">
+            <img src="src/img/Muñeco.png">
+            <p class="bold empty">Ningún mensaje fue encontrado</p>
+            <p class="empty-legend">Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </div> 
 
 
-    
+      <div class="flex translation text-found display-none padding-result">
+            <textarea class="inputCopy" name="" id="" placeholder="Resultado" disabled></textarea>
+            <button type="button" onclick="copy()" class="button-grey">Copiar</button>
+      </div> 
 
-
-
-    
+    </main>
+    <script src="src/js/app.js"></script>
 </body>
+
 </html>
